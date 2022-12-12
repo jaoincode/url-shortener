@@ -28,11 +28,11 @@ a {
   background: hsl(180, 66%, 49%);
   padding: 10px 25px;
   border-radius: 40px;
-  transition: background 0.1s;
+  transition: filter 0.05s;
 }
 
 .secondary-btn:hover {
-  background: hsl(255, 11%, 22%);
+  filter: brightness(1.1);
 }
 
 body {
@@ -239,4 +239,118 @@ header ul li {
 .boost h2 {
   margin-bottom: 20px;
   color: #fff;
+}
+
+@media (max-width: 1300px) {
+  * {
+    /* border: 1px solid red; */
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 20px 20px;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  .content {
+    text-align: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 100px 100px;
+    position: relative;
+  }
+
+  .intro {
+    /* width: 100%; */
+  }
+
+  .intro h2 {
+    font-size: 40px;
+    max-width: 100%;
+  }
+
+  .intro p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .main-img {
+    max-width: 300px;
+  }
+
+  .main-img img {
+    width: 100%;
+  }
+
+  .statistics {
+    height: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 250px;
+    height: 300px;
+    padding: 50px 30px 20px;
+    position: relative;
+    transition: transform 0.2s;
+    text-align: center;
+  }
+
+  .card .icon {
+    left: 75px;
+  }
+
+  .card:nth-child(2) {
+    margin-top: 70px;
+  }
+
+  .card:nth-child(3) {
+    margin-top: 70px;
+  }
+
+  .shorten-box {
+    width: 90%;
+    height: 120px;
+  }
+
+  .shorten-box .secondary-btn {
+    font-size: 10px;
+  }
+
+  .section-title {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+
+  .statistics p {
+    font-size: 20px;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .card p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .boost {
+    background: hsl(257, 27%, 26%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+    z-index: 10;
+  }
 }
